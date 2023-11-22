@@ -1,0 +1,13 @@
+<h1>Dragon Personajes</h1>
+<hr>
+
+<div class="row">
+  <div class="col">
+    <app-dbz-list [characterList]="characters" (onDeleteId)="deleteCharacter($event)"></app-dbz-list>
+
+
+  </div>
+  <div class="col">
+    <app-dbz-form (onNewCharacter)="addCharacter($event)"></app-dbz-form>
+  </div>
+</div>
